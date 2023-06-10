@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { RadioStation } from "../types/Station";
 import { ListSearchQuery } from "../types/ListSearchQuery";
 
@@ -60,15 +60,3 @@ export default function ({ onSelectStation   , listQuery }: { onSelectStation: F
         </div>
     )
 }
-
-
-function resolveTags(tagsString:string){
-
-    
-
-    const tags = tagsString.split(',') ;
-    let firstTags = tags.slice(0 , 3);
-    return (firstTags.length > 0)? firstTags.join(', ') + ' - ' : ''
-}
-
-
